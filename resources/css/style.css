@@ -1,4 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Roboto', sans-serif;
+
+
+}
+div {
+  border: 1px solid lightgrey;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.menu {
+  background-color: #fff;
+  height: 64px;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header {
+  background-color: grey;
+  height: 180px;
+  position: relative;
+  top: 64px;
+}
+
+.content {
+  background-color: #EAEDF0;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 64px;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  font-weight:700;
+  width: 100%;
+  line-height: 1.5;
+  padding-bottom: 0;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  margin-left: 16px;
+
+
+}
+
+.content h3 {
+  font-size: 2rem;
+  font-weight:500;
+  width: 100%;
+  line-height: 1.5;
+  padding-bottom: 0;
+  margin-bottom: 24px;
+  margin-left: 16px;
+
+}
+
+button {
+  width: 85%;
+  height: 50px;
+  background-color: darkgrey;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 32px;
+  font-size: 1.5rem;
+
+}
+
+.content-2 {
+  background-color: white;
+  height: 400px;
+  display: inline-block;
+  margin-left: 16px;
+
+}
+.content-2 img {
+  width: 90%;
+  margin-bottom: 16px;
+  margin-top: 16px;
+
+}
+
+.info {
+  width: 100%;
+}
+.info h2{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 32px;
+  line-height: 1.5;
+}
+
+.info h3 {
+  font-size: 1.3rem;
+  font-weight: 100;
+  margin-left: 32px;
+  line-height: 1.5;
+}
+
+.info span {
+  color: turquoise;
+  line-height: 1.5;
+  margin-left: 32px;
+  font-size: 1.2rem;
+
+}
+
+.learning {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  height: 700px;
+}
+
+.learning h1{
+  font-size: 3.5rem;
+  font-weight:700;
+  width: 100%;
+  display: flex;
+
+}
+
+.major {
+  width: 85%;
+  height: 80px;
+  background-color: lightgrey;
+  display: flex;
+
+}
+
+.major h2{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 32px;
+  line-height: 1.5;
+  margin-left: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+}
+
+.thesis {
+  background-color: white;
+  height: 175px;
+
+}
+
+.thesis h1 {
+  font-size: 3.5rem;
+  font-weight:700;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.video {
+  /*background-color: #C8C6FA;*/
+}
+.footer {
+  background-color: white;
+  height: 100px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    /*background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+}
 
 
 
@@ -7,9 +203,9 @@
 
 
 /*Media Queries*/
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {
   body {
     font-size: 12px;
     background-color: green;
   }
-}
+}*/
