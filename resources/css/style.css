@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
 }
 
 body {
@@ -33,6 +33,7 @@ div {
   position: fixed;
   display: flex;
   justify-content: space-around;
+  z-index: 5;
 }
 
 .header {
@@ -42,7 +43,7 @@ div {
   top: 64px;
 }
 
-.content {
+.jumbotron {
   background-color: #EAEDF0;
   height: 500px;
   display: flex;
@@ -184,16 +185,63 @@ button {
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-  body {
-    /*background-color: #F09A9D; /* Red */
-  }
+.desktop {
+  display: none;
+}
+
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  body {
-    background-color: #B2D6FF; /* Blue */
-  }
+.mobile {
+  display: none;
+    }
+
+.menu {
+  display: inline;
+}
+
+.menu h3 {
+  display: inline;
+  float: right;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+}
+
+.menu h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  display: inline;
+  font-weight: bolder;
+
+}
+
+.menu img {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+.menu span {
+  color: grey;
+  font-weight: 100;
+}
+
+.header {
+display: none;
+}
+
+.jumbotron img {
+  width: 60%;
+  height: auto;
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+
+}
+
+
+
+
+
+
 }
 
 
